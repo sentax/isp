@@ -1,0 +1,26 @@
+{
+  "name": "isp",
+  "version": "2.0.0",
+  "description": "infinite synapses trading platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sentax/isp.git"
+  },
+  "keywords": [
+    "financial",
+    "nodejs",
+    "marktes",
+    "trading",
+    "analyze"
+  ],
+  "author": "romidian70@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sentax/isp/issues"
+  },
+  "homepage": "https://github.com/sentax/isp#readme"
+}
