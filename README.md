@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## Welcome infinite synapses trading platform
+this project has been made to prepare an open source platform for **trade** and **analyze** on financial markets.<br>
+financial markets such as **cryptocurrency**, **forex**, **binary** **options**, and all others. 
 
-You can use the [editor on GitHub](https://github.com/sentax/isp/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+to use this platform you would need to install [nodejs](https://nodejs.org), [redis](https://redis.io),  [cassandra](https://archive.apache.org/dist/cassandra/)
 
-### Markdown
+**Run**
+<br>
+````
+npm install
+npm start
+````
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+**Developer Mode [Docs](https://isp.io)**
+<br>
+````
+npm run dev
+````
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sentax/isp/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
