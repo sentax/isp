@@ -27,9 +27,6 @@ class Feed {
 
         this.process.on('close', (code) => {
             console.log('close shod')
-            // console.log(`child process exited with code ${code}`);
-            // childs[index].stdin.pause();
-            // childs[index].kill(1);
         });
 
         //start
