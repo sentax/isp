@@ -26,7 +26,7 @@
   "feeds": [
     {
       "id": "binance",
-      "path": "/FEEDS/CRYPTO/CCXT/binance.js"
+      "path": "/feeds/binance/index.js"
     }
   ]
 }

@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/sentax/isp#readme",
   "dependencies": {
+    "child_process": "^1.0.2",
+    "node-binance-api": "^0.10.4",
     "uuid": "^7.0.2"
   }
 }
