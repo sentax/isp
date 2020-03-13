@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "redis": {
+    "port": 6379,
+    "host": "192.168.1.148"
+  },
+  "cassandra": {
+    "port": 9042,
+    "host": "192.168.1.148",
+    "keyspace": "isp"
+  },
+  "socket": {
+    "enabled": true,
+    "authorized": false,
+    "port": 3001
+  },
+  "api": {
+    "enabled": true,
+    "authorize": false,
+    "port": 1337
+  },
+  "auth": {
+    "password": "4f7f47f7b1f2170f5bc1fae89fd5488a59f5c861",
+    "expire": 14000
+  },
+  "feeds": [
+    {
+      "id": "binance",
+      "path": "/FEEDS/CRYPTO/CCXT/binance.js"
+    }
+  ]
+}

@@ -3,4 +3,4 @@ class EaManager {
 }
 
 
-export default EaManager;
+module.exports = EaManager;

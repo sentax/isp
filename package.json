@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/sentax/isp/issues"
   },
-  "homepage": "https://github.com/sentax/isp#readme"
+  "homepage": "https://github.com/sentax/isp#readme",
+  "dependencies": {
+    "uuid": "^7.0.2"
+  }
 }

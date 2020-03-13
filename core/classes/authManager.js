@@ -3,4 +3,4 @@ class AuthManager {
 }
 
 
-export default AuthManager;
+module.exports =  AuthManager;

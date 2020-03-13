@@ -3,4 +3,4 @@ class EA {
 }
 
 
-export default EA;
+module.exports =  EA;
