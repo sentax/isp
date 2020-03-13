@@ -26,7 +26,7 @@ class Feed {
         });
 
         this.process.on('close', (code) => {
-            console.log('close shod')
+            console.log('close')
         });
 
         //start
