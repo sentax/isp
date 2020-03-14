@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+</head>
+<body>
+
+<script>
+    var token = '997f3fd18c1addb5a8f561cfd8c97fa239976107cfcda3e437ff325a77b7d688a2280c0db0b11af3215c1294ad1cccc0d70690c8a78a739eb7986849d5f7a4acce441496a536cb57b01177b20089aae3056f260c36b6c23e0e26b6116c21b114da2dbd48a5e456bf956134ffa5c65e48914059b90699abdd9368eee3ce241a8f';
+    var socket = io('http://192.168.1.148:1337/?token=' + token);
+
+    socket.on('message', (message) => {
+        console.log(message)
+    });
+
+    socket.on('connect', () => {
+        console.log('connected')
+    });
+
+
+    socket.on('disconnect', () => {
+        console.log('disconnected')
+    });
+
+
+</script>
+</body>
+</html>
