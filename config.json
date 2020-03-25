@@ -17,7 +17,7 @@
   "api": {
     "enabled": true,
     "authorize": false,
-    "port": 1337
+    "port": 8808
   },
   "auth": {
     "password": "4f7f47f7b1f2170f5bc1fae89fd5488a59f5c861",
