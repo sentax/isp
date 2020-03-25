@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/sentax/isp#readme",
   "dependencies": {
+    "cassandra-driver": "^4.4.0",
     "child_process": "^1.0.2",
     "fastify": "^2.12.1",
     "fastify-autoload": "^1.2.2",
