@@ -254,6 +254,7 @@ function dragMoveListener(event) {
     const target = document.getElementById('isp-window-' + event.target.getAttribute('data-id-index'));
     const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
     const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+    //ability of window indicator
     const mouse = {...event.client};
     // if (mouse.y < 10) {
     //     indicatorMove('top')
