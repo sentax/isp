@@ -19,7 +19,7 @@ document.onload = (() => {
 
     setTimeout(() => {
         const domContainer = document.querySelector('#test');
-        ReactDOM.render(<Hello/>, domContainer);
+        // ReactDOM.render(<Hello/>, domContainer);
 
     }, 1100)
 

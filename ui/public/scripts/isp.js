@@ -11,7 +11,7 @@ const ready = () => {
             width: `${Math.random() * 1000}px`,
             height: `${Math.random() * 800}px`
         }).render();
-    }, 1000000000)
+    }, 3000)
 };
 
 
@@ -155,11 +155,22 @@ class ISP_WINDOW {
     <div class="resize-right resize-right-style"></div>
   <div class="resize-bottom resize-bottom-style"></div>
   <div class="resize-bottom resize-right resize-corner-style"></div>
-    <div id="test"></div>
+  
     `;
+        const componentHolder = document.createElement('div');
+        const resizesHolder = document.createElement('div');
         windowElement.appendChild(titleBarElement);
         windowElement.appendChild(contentElement);
+        contentElement.appendChild(componentHolder);
+        contentElement.appendChild(resizesHolder);
         document.getElementById(`isp-desktop-${this.parent.props.name}`).appendChild(windowElement);
+        ReactDOM.render(<Hello/>, componentHolder);
+        resizesHolder.innerHTML = `
+    <div class="resize-right resize-right-style"></div>
+  <div class="resize-bottom resize-bottom-style"></div>
+  <div class="resize-bottom resize-right resize-corner-style"></div>
+
+    `;
         this.registerBoundings(this.props.x, this.props.y);
         const tween = KUTE.fromTo(windowElement, {scale: 0.2, translateX: 0, translateY: 0}, {
             scale: 1,
