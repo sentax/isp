@@ -11,7 +11,7 @@ const ready = () => {
             width: `${Math.random() * 1000}px`,
             height: `${Math.random() * 800}px`
         }).render();
-    }, 100)
+    }, 1000000000)
 };
 
 
@@ -151,11 +151,11 @@ class ISP_WINDOW {
     `;
         const contentElement = document.createElement('div');
         contentElement.className = `isp-window-content`;
-        contentElement.innerHTML = `aaa sina buyurdilar
+        contentElement.innerHTML = `
     <div class="resize-right resize-right-style"></div>
   <div class="resize-bottom resize-bottom-style"></div>
   <div class="resize-bottom resize-right resize-corner-style"></div>
-
+    <div id="test"></div>
     `;
         windowElement.appendChild(titleBarElement);
         windowElement.appendChild(contentElement);
