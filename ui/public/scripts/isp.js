@@ -33,12 +33,14 @@ class ISP_Launcher {
 }
 
 //Desktop class
+let currentzIndex = 0;
+
 class ISP_Desktop {
     constructor(parent, props = {}) {
         this.parent = parent;
         this.props = JSON.parse(JSON.stringify(props));
         this.windows = {};
-        this.currentzIndex = 0;
+
     }
 
     createWindow(props = {}) {
@@ -65,7 +67,8 @@ class ISP_WINDOW {
     }
 
     bringUp() {
-        document.getElementById(`isp-window-${this.props.id}`).style.zIndex = this.parent.currentzIndex++;
+        currentzIndex += 10;
+        document.getElementById(`isp-window-${this.props.id}`).style.zIndex = currentzIndex;
     }
 
     toggleFullScreen() {
@@ -164,7 +167,7 @@ class ISP_WINDOW {
         contentElement.appendChild(componentHolder);
         contentElement.appendChild(resizesHolder);
         document.getElementById(`isp-desktop-${this.parent.props.name}`).appendChild(windowElement);
-        ReactDOM.render(<Hello/>, componentHolder);
+        ReactDOM.render(<Hello {...this.props}/>, componentHolder);
         resizesHolder.innerHTML = `
     <div class="resize-right resize-right-style"></div>
   <div class="resize-bottom resize-bottom-style"></div>
